@@ -21,7 +21,7 @@ export function Navbar() {
       </div>
 
       {/* Enroll Now button */}
-      <Button href="/enroll" className="ml-4">
+      <Button href="/trainings" className="ml-4">  {/* Changed the href from '/enroll' to '/trainings' */}
         Enroll Now
       </Button>
     </nav>

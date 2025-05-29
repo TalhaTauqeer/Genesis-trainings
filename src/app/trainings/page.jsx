@@ -3,11 +3,6 @@ import Image from 'next/image';
 import { Button } from '@/components/Button'; // Assuming Button component is already created
 
 // Helper function to format the date
-const formatDate = (dateString) => {
-  const date = new Date(dateString);
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  return date.toLocaleDateString('en-US', options);
-};
 
 export default function Trainings() {
   return (
@@ -21,7 +16,7 @@ export default function Trainings() {
         }}
       >
         <Image
-          src="/images/screenshots/Banner_Sample.png" // Correct path to the banner image
+          src="/images/screenshots/Studying.jpg" // Correct path to the banner image
           alt="Training Banner"
           layout="fill"
           objectFit="cover"
@@ -46,7 +41,7 @@ export default function Trainings() {
         <div
           style={{
             height: '5px',
-            backgroundColor: '#FF6B35', /* Orange color */
+            backgroundColor: '#004875', /* Changed to #004875 */
             width: '100%',
           }}
         ></div>
@@ -128,7 +123,7 @@ export default function Trainings() {
                 }}
               >
                 <p style={{ fontSize: '0.875rem', color: '#004875' }}>Starting From</p>
-                <p style={{ fontSize: '0.875rem', color: '#004875' }}>{formatDate(course.date)}</p>
+                <p style={{ fontSize: '0.875rem', color: '#004875' }}>{course.details.date}</p>
               </div>
 
               {/* Description */}
@@ -148,7 +143,7 @@ export default function Trainings() {
               {/* Enroll Now Button (Fixed at the bottom) */}
               <div style={{ marginTop: 'auto' }}>
                 <Button
-                  href="/enroll"
+                  href={`/courses/${course.index}`} // Dynamic course details page link
                   style={{
                     width: '100%',
                     backgroundColor: '#004875',

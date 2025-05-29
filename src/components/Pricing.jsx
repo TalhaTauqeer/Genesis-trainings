@@ -9,12 +9,6 @@ import 'react-multi-carousel/lib/styles.css'
 
 // Plan component with image, description, and date
 function Plan({ image, description, date }) {
-  const formattedDate = new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })
-
   return (
     <section
       className="flex flex-col rounded-3xl bg-slate-800 overflow-hidden"
@@ -41,7 +35,7 @@ function Plan({ image, description, date }) {
         <p className="text-white text-base leading-relaxed">{description}</p>
         <hr className="border-t border-gray-500 my-4" />
         <p className="text-blue-400 text-sm font-medium">
-          Starting From {formattedDate}
+          Starting From {date}
         </p>
       </div>
     </section>
@@ -99,8 +93,8 @@ export function Pricing() {
           }}
         >
           {/* Rendering the cards */}
-          {courses.map(({ index, image, description, date }) => (
-            <Plan key={index} image={image} description={description} date={date} />
+          {courses.map(({ index, image, description, details }) => (
+            <Plan key={index} image={image} description={description} date={details.date} />
           ))}
         </Carousel>
       </Container>
