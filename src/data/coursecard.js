@@ -1,7 +1,7 @@
 export const courses = [
   {
     index: 1,
-    title: "Graphic Design",
+    title: "Graphic Designer Expert (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
     image: "/images/screenshots/CourseCard_Sample02.png",
     description:
@@ -123,7 +123,7 @@ export const courses = [
   },
   {
     index: 2,
-    title: "Shopify Ecommerce",
+    title: "Shopify Ecommerce Programe",
     heroImage: "/images/screenshots/Background1.jpg",
     image: "/images/screenshots/CourseCard_Sample02.png",
     description:
@@ -334,7 +334,7 @@ export const courses = [
   },
   {
     index: 4,
-    title: "AI & Machine Learning",
+    title: "AI/ML Developer (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
     image: "/images/screenshots/CourseCard_Sample03.png",
     description:
@@ -426,6 +426,108 @@ export const courses = [
       ],
       careerOutlook:
         "Become an AI Developer, Machine Learning Engineer, or Data Scientist.",
+    },
+  },
+  {
+    index: 5,
+    title: "Video Editing Expert (From Scratch)",
+    heroImage: "/images/screenshots/Background1.jpg",
+    image: "/images/screenshots/CourseCard_Sample03.png",
+    description:
+      "Learn AI/ML from scratch and build real-world projects using Python, TensorFlow, and modern AI tools.",
+    details: {
+      date: "June 14, 2025",
+      duration: "3 Months + 1 Year Support",
+      timings: "Flexible (set with your batch)",
+      fee: "26,900 PKR",
+      highlights: [
+        "Step-by-step learning from day 1",
+        "Get 1-Year Trainer Support",
+        "Genesis Certificate upon assessment",
+        "Build job-ready AI/ML projects",
+      ],
+      content: [
+        "Python for Data Science",
+        "Supervised & Unsupervised Learning",
+        "Deep Learning & AI Tools",
+        "Model Building and Deployment",
+        "Freelancing and Career Prep",
+      ],
+      whyJoin: [
+        "Learn from experienced video editors and content creators ",
+        "Get 1-Year Trainer Support ",
+        "Access to a Private Creative Community" ,
+        "Earn Genesis Certificate upon assessment", 
+        "Practical learning from Day 1" ,
+        "Build a real-world portfolio to attract clients ",
+        "Learn editing for YouTube, Reels, Films & Freelancing",
+      ],
+      coreSkills: [
+        "Fundamentals of Video Editing", 
+        "Timeline Editing & Storyboarding", 
+        "Color Correction & Grading" ,
+        "Transitions, Effects, and Motion Graphics" ,
+        "Audio Editing & Sound Design ",
+        "Editing for Social Media (YouTube, Reels, Shorts)" ,
+        "Exporting & Format Optimization" ,
+        "Client-Based Project Editing ",
+        "Freelancing & Portfolio Building",
+      ],
+      tools: [
+        "Adobe Premiere Pro", 
+        "Adobe After Effects (Intro)", 
+        "CapCut & VN (for mobile)", 
+        "Audacity (for audio cleanup)", 
+        "Use of Stock Assests",
+      ],
+      moduleSnapshot: [
+        {
+          heading: "Introduction to Video Editing",
+          points: [
+            "What is editing & why it matters",
+            "Types of video content: Social, Documentary, Commercial",
+          ],
+        },
+        {
+          heading: "Understanding Software & Workflow",
+          points: [
+            "Setup Premiere Pro / DaVinci Resolve", 
+            "Project setup, timelines, and media organization" ],
+        },
+        {
+          heading: "Cutting & Editing Basics ",
+          points: ["Trimming, splitting, and rearranging clips", "Working with B-roll and storytelling"],
+        },
+        {
+          heading: "Color Correction & Transitions ",
+          points: ["Basic correction, LUTs, cinematic looks", " Smooth transitions, fade-ins/outs, match cuts"],
+        },
+        {
+          heading: "Text, Titles & Motion Graphics",
+          points: ["Lower thirds, captions, animated intros using AE or CapCut "],
+        },
+        {
+          heading: "Sound & Audio Editing ",
+          points: [
+            "Removing noise, syncing audio, adding background music ",
+            "Using sound effects for storytelling ",
+          ],
+        },
+        {
+          heading: " Editing for Platforms (YouTube, Reels, Shorts)",
+          points: [" Aspect ratios, subtitles, branding overlays", "Creating viral hooks and engaging edits "],
+        },
+        {
+          heading: "Real Client Projects & Portfolio",
+          points: ["Event edit, promo video, YouTube vlog or ad", " Showreel preparation"],
+        },
+        {
+          heading: "Freelancing & Career Guide",
+          points: ["Platforms like Upwork, Fiverr, Behance ", "How to price, pitch, and deliver video projects", "Building a personal editing brand"],
+        },
+      ],
+      careerOutlook:
+        "Video editing is one of the most in-demand skills in the digital age. From YouTube and Instagram to corporate ads and film — every industry needs editors. This course helps you build real income potential as a freelancer or in-house editor.",
     },
   },
 ];

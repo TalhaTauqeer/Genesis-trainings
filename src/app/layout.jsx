@@ -2,17 +2,16 @@ import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
-
-// Import Navbar component
 import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - Genesis Engineering',
+    default: 'Genesis Engr - Trainings',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Genesis Trainings delivers expert-led programs to thrive in todays digital economy.',
 }
 
 const inter = Inter({
@@ -41,6 +40,7 @@ export default function RootLayout({ children }) {
         {/* Add Navbar here */}
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

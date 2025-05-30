@@ -1,10 +1,12 @@
 "use client";
 import { courses } from '@/data/coursecard'; // Import course data
 import Image from 'next/image'; // Ensure correct usage of Next.js Image component
+import { useRouter } from 'next/navigation';
 import { Button } from '@/components/Button'; // Assuming Button component is already created
 
 export default function CoursePage({ params }) {
   const { id } = params;
+  const router = useRouter();
   const course = courses.find(course => course.index == id); // Find course by index
 
   if (!course) {
@@ -29,7 +31,7 @@ export default function CoursePage({ params }) {
         <div
           style={{
             position: 'absolute',
-            top: '30%',
+            top: '18%',
             left: '50%',
             transform: 'translateX(-50%)',
             zIndex: 2,
@@ -56,6 +58,24 @@ export default function CoursePage({ params }) {
               <span style={{ fontSize: '1.2rem', color: 'white' }}>Fee:</span> {course.details.fee}
             </p>
           </div>
+          {/* Enroll Now Button */}
+          <Button
+            onClick={() => router.push('/form')}
+            style={{
+              backgroundColor: '#FFD700',
+              color: 'black',
+              padding: '12px 32px',
+              fontSize: '1.2rem',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              border: 'none',
+              textDecoration: 'none',
+              marginTop: '30px',
+              display: 'inline-block',
+            }}
+          >
+            Enroll Now
+          </Button>
         </div>
       </section>
 
@@ -101,7 +121,7 @@ export default function CoursePage({ params }) {
       <section
         style={{
           backgroundColor: '#ffffff',
-          padding: '60px 0',
+          padding: '40px 0',
           textAlign: 'left',
         }}
       >
@@ -110,7 +130,8 @@ export default function CoursePage({ params }) {
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: '30px',
+            gap: '10px',
+            columnGap: '0px',
             marginLeft: '10%',
             marginTop: '30px',
           }}
@@ -130,7 +151,7 @@ export default function CoursePage({ params }) {
       <section
         style={{
           backgroundColor: '#004875',
-          padding: '60px 0',
+          padding: '30px 0',
           textAlign: 'left',
           color: 'white',
         }}
@@ -140,7 +161,7 @@ export default function CoursePage({ params }) {
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',
-            gap: '20px',
+            gap: '10px',
             marginLeft: '10%',
             marginTop: '30px',
           }}
@@ -160,7 +181,7 @@ export default function CoursePage({ params }) {
       <section
         style={{
           backgroundColor: '#f7f9fc',
-          padding: '40px 0',
+          padding: '20px 0',
           textAlign: 'left',
         }}
       >
@@ -170,7 +191,7 @@ export default function CoursePage({ params }) {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            marginTop: '30px',
+            marginTop: '5px',
           }}
         >
           {course.details.tools.map((item, index) => (
@@ -194,7 +215,6 @@ export default function CoursePage({ params }) {
       </section>
 
       {/* Module Snapshot */}
-      {/* Module Snapshot */}
       <section
         style={{
           backgroundColor: '#ffffff',
@@ -209,7 +229,8 @@ export default function CoursePage({ params }) {
             gridTemplateColumns: 'repeat(3, 1fr)',
             gap: '30px',
             marginTop: '40px',
-            marginLeft: '10%',
+            marginLeft: '2%',
+            marginRight: '10px'
           }}
         >
           {course.details.moduleSnapshot.map((item, index) => (

@@ -80,24 +80,27 @@ export default function Trainings() {
                   width: '100%',
                   height: '250px',
                   overflow: 'hidden',
-                  marginBottom: '1rem', // Space between the image and content below
-                  padding: '0', // Removed padding here for the image container
-                  margin: '0', // Removed margin to make sure the image sits flush with the borders
+                  padding: 0,
+                  margin: 0,
+                  borderTopLeftRadius: '8px',
+                  borderTopRightRadius: '8px',
                 }}
               >
                 <Image
                   src={course.image}
                   alt={`Course Image ${course.index}`}
-                  width={500} // Image width for 100% container width
-                  height={250} // Height should be consistent with the card's design
+                  width={500}
+                  height={250}
                   style={{
                     width: '100%',
                     height: '100%',
-                    objectFit: 'cover', // Ensure it covers the area without distortion
-                    margin: '0', // Remove any margin
-                    padding: '0', // Remove any padding
+                    objectFit: 'cover',
+                    display: 'block', // removes default inline space
+                    borderTopLeftRadius: '8px',
+                    borderTopRightRadius: '8px',
                   }}
                 />
+
               </div>
 
               {/* Title of the course */}
