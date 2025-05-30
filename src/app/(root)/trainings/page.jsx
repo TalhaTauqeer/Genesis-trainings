@@ -1,6 +1,6 @@
-import { courses } from '@/data/coursecard'; // Import course data
-import Image from 'next/image';
-import { Button } from '@/components/Button'; // Assuming Button component is already created
+import { courses } from '@/data/coursecard' // Import course data
+import Image from 'next/image'
+import { Button } from '@/components/Button' // Assuming Button component is already created
 
 // Helper function to format the date
 
@@ -12,7 +12,7 @@ export default function Trainings() {
         style={{
           position: 'relative',
           width: '100%',
-          height: '300px', /* Adjust the height as needed */
+          height: '400px' /* Adjust the height as needed */,
         }}
       >
         <Image
@@ -35,13 +35,14 @@ export default function Trainings() {
             Ecommerce Training Programs in Pakistan
           </h1>
           <p style={{ color: 'white', marginTop: '1rem' }}>
-            Step out of your comfort zone because Enablers has brought the perfect learning experience for your entrepreneurial growth.
+            Step out of your comfort zone because Enablers has brought the
+            perfect learning experience for your entrepreneurial growth.
           </p>
         </div>
         <div
           style={{
             height: '5px',
-            backgroundColor: '#004875', /* Changed to #004875 */
+            backgroundColor: '#004875' /* Changed to #004875 */,
             width: '100%',
           }}
         ></div>
@@ -100,7 +101,6 @@ export default function Trainings() {
                     borderTopRightRadius: '8px',
                   }}
                 />
-
               </div>
 
               {/* Title of the course */}
@@ -125,12 +125,23 @@ export default function Trainings() {
                   marginBottom: '1rem',
                 }}
               >
-                <p style={{ fontSize: '0.875rem', color: '#004875' }}>Starting From</p>
-                <p style={{ fontSize: '0.875rem', color: '#004875' }}>{course.details.date}</p>
+                <p style={{ fontSize: '0.875rem', color: '#004875' }}>
+                  Starting From
+                </p>
+                <p style={{ fontSize: '0.875rem', color: '#004875' }}>
+                  {course.details.date}
+                </p>
               </div>
 
               {/* Description */}
-              <p style={{ fontSize: '0.875rem', color: '#333', marginBottom: '1rem', flexGrow: 1 }}>
+              <p
+                style={{
+                  fontSize: '0.875rem',
+                  color: '#333',
+                  marginBottom: '1rem',
+                  flexGrow: 1,
+                }}
+              >
                 {course.description}
               </p>
 
@@ -166,5 +177,5 @@ export default function Trainings() {
         </div>
       </section>
     </div>
-  );
+  )
 }

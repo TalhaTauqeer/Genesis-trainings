@@ -1,16 +1,12 @@
-"use client";
-import { courses } from '@/data/coursecard'; // Import course data
-import Image from 'next/image'; // Ensure correct usage of Next.js Image component
-import { useRouter } from 'next/navigation';
-import { Button } from '@/components/Button'; // Assuming Button component is already created
+import { Button } from '@/components/Button'
+import { courses } from '@/data/coursecard' // Import course data
 
 export default function CoursePage({ params }) {
-  const { id } = params;
-  const router = useRouter();
-  const course = courses.find(course => course.index == id); // Find course by index
+  const { id } = params
+  const course = courses.find((course) => course.index == id) // Find course by index
 
   if (!course) {
-    return <div>Course not found...</div>; // In case the course is not found
+    return <div>Course not found...</div> // In case the course is not found
   }
 
   return (
@@ -38,8 +34,12 @@ export default function CoursePage({ params }) {
             maxWidth: '600px',
           }}
         >
-          <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>{course.title}</h1>
-          <p style={{ fontSize: '1.2rem', marginTop: '20px' }}>{course.description}</p>
+          <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>
+            {course.title}
+          </h1>
+          <p style={{ fontSize: '1.2rem', marginTop: '20px' }}>
+            {course.description}
+          </p>
 
           {/* Adding Start Date and Fee below the Description */}
           <div
@@ -51,16 +51,19 @@ export default function CoursePage({ params }) {
             }}
           >
             <p style={{ marginBottom: '10px' }}>
-              <span style={{ fontSize: '1.2rem', color: 'white' }}>Starting From:</span>{' '}
+              <span style={{ fontSize: '1.2rem', color: 'white' }}>
+                Starting From:
+              </span>{' '}
               {course.details.date}
             </p>
             <p style={{ marginTop: '10px' }}>
-              <span style={{ fontSize: '1.2rem', color: 'white' }}>Fee:</span> {course.details.fee}
+              <span style={{ fontSize: '1.2rem', color: 'white' }}>Fee:</span>{' '}
+              {course.details.fee}
             </p>
           </div>
           {/* Enroll Now Button */}
           <Button
-            onClick={() => router.push('/form')}
+            href={'/form'}
             style={{
               backgroundColor: '#FFD700',
               color: 'black',
@@ -88,7 +91,15 @@ export default function CoursePage({ params }) {
           color: '#004875',
         }}
       >
-        <h3 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center' }}>Why Join This Training?</h3>
+        <h3
+          style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+          }}
+        >
+          Why Join This Training?
+        </h3>
         <div
           style={{
             display: 'flex',
@@ -108,7 +119,11 @@ export default function CoursePage({ params }) {
                 textAlign: 'center',
               }}
             >
-              <span role="img" aria-label="check" style={{ marginRight: '10px' }}>
+              <span
+                role="img"
+                aria-label="check"
+                style={{ marginRight: '10px' }}
+              >
                 ✔
               </span>
               {item}
@@ -125,7 +140,15 @@ export default function CoursePage({ params }) {
           textAlign: 'left',
         }}
       >
-        <h3 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center' }}>What You'll Learn</h3>
+        <h3
+          style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+          }}
+        >
+          What You{"'"}ll Learn
+        </h3>
         <div
           style={{
             display: 'grid',
@@ -138,7 +161,11 @@ export default function CoursePage({ params }) {
         >
           {course.details.content.map((item, index) => (
             <div key={index} style={{ fontSize: '1.2rem', color: '#004875' }}>
-              <span role="img" aria-label="check" style={{ marginRight: '10px' }}>
+              <span
+                role="img"
+                aria-label="check"
+                style={{ marginRight: '10px' }}
+              >
                 ✔
               </span>
               {item}
@@ -156,7 +183,15 @@ export default function CoursePage({ params }) {
           color: 'white',
         }}
       >
-        <h3 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center' }}>Core Skills Covered</h3>
+        <h3
+          style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+          }}
+        >
+          Core Skills Covered
+        </h3>
         <div
           style={{
             display: 'grid',
@@ -167,8 +202,15 @@ export default function CoursePage({ params }) {
           }}
         >
           {course.details.coreSkills.map((item, index) => (
-            <div key={index} style={{ fontSize: '1.2rem', marginBottom: '15px' }}>
-              <span role="img" aria-label="check" style={{ marginRight: '10px' }}>
+            <div
+              key={index}
+              style={{ fontSize: '1.2rem', marginBottom: '15px' }}
+            >
+              <span
+                role="img"
+                aria-label="check"
+                style={{ marginRight: '10px' }}
+              >
                 ✔
               </span>
               {item}
@@ -185,7 +227,15 @@ export default function CoursePage({ params }) {
           textAlign: 'left',
         }}
       >
-        <h3 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center' }}>Tools You'll Use</h3>
+        <h3
+          style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+          }}
+        >
+          Tools You{"'"}ll Use
+        </h3>
         <div
           style={{
             display: 'flex',
@@ -205,7 +255,11 @@ export default function CoursePage({ params }) {
                 textAlign: 'center',
               }}
             >
-              <span role="img" aria-label="check" style={{ marginRight: '10px' }}>
+              <span
+                role="img"
+                aria-label="check"
+                style={{ marginRight: '10px' }}
+              >
                 ✔
               </span>
               {item}
@@ -222,7 +276,15 @@ export default function CoursePage({ params }) {
           textAlign: 'left',
         }}
       >
-        <h3 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center' }}>Module Snapshot</h3>
+        <h3
+          style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+          }}
+        >
+          Module Snapshot
+        </h3>
         <div
           style={{
             display: 'grid',
@@ -230,7 +292,7 @@ export default function CoursePage({ params }) {
             gap: '30px',
             marginTop: '40px',
             marginLeft: '2%',
-            marginRight: '10px'
+            marginRight: '10px',
           }}
         >
           {course.details.moduleSnapshot.map((item, index) => (
@@ -243,11 +305,20 @@ export default function CoursePage({ params }) {
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
               }}
             >
-              <h4 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>{item.heading}</h4>
+              <h4 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>
+                {item.heading}
+              </h4>
               <ul style={{ listStyleType: 'none', padding: '0' }}>
                 {item.points.map((point, pointIndex) => (
-                  <li key={pointIndex} style={{ fontSize: '1.1rem', marginBottom: '10px' }}>
-                    <span role="img" aria-label="check" style={{ marginRight: '10px' }}>
+                  <li
+                    key={pointIndex}
+                    style={{ fontSize: '1.1rem', marginBottom: '10px' }}
+                  >
+                    <span
+                      role="img"
+                      aria-label="check"
+                      style={{ marginRight: '10px' }}
+                    >
                       ✔
                     </span>
                     {point}
@@ -259,7 +330,6 @@ export default function CoursePage({ params }) {
         </div>
       </section>
 
-
       {/* Career Outlook */}
       <section
         style={{
@@ -269,8 +339,18 @@ export default function CoursePage({ params }) {
           textAlign: 'left',
         }}
       >
-        <h3 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center' }}>Career Outlook</h3>
-        <p style={{ fontSize: '1.2rem', marginTop: '20px', textAlign: 'center' }}>
+        <h3
+          style={{
+            fontSize: '2.5rem',
+            fontWeight: 'bold',
+            textAlign: 'center',
+          }}
+        >
+          Career Outlook
+        </h3>
+        <p
+          style={{ fontSize: '1.2rem', marginTop: '20px', textAlign: 'center' }}
+        >
           {course.details.careerOutlook}
         </p>
       </section>
@@ -302,5 +382,5 @@ export default function CoursePage({ params }) {
         <p>© 2025 Genesis Trainings. All rights reserved.</p>
       </footer>
     </div>
-  );
+  )
 }

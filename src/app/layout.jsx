@@ -1,9 +1,6 @@
+import '@/styles/tailwind.css'
 import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
-
-import '@/styles/tailwind.css'
-import { Navbar } from '@/components/Navbar'
-import { Footer } from '@/components/Footer'
 
 export const metadata = {
   title: {
@@ -36,12 +33,7 @@ export default function RootLayout({ children }) {
         lexend.variable,
       )}
     >
-      <body className="flex h-full flex-col">
-        {/* Add Navbar here */}
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body className="flex h-full flex-col">{children}</body>
     </html>
   )
 }
