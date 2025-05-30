@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import LongLogo from '@/images/logos/LongLogo.png'
 import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 // Import your icons from local folder
@@ -16,7 +15,7 @@ export function Footer() {
     <footer style={{ backgroundColor: '#0F172B', color: 'white' }}>
       <Container>
         <div className="py-10">
-          <div className="mx-auto w-auto flex justify-center">
+          <div className="mx-auto flex w-auto justify-center">
             <Image src={LongLogo} alt="Genesis Trainings Logo" height={40} />
             {/* Adjust height or add width if needed */}
           </div>
@@ -32,24 +31,42 @@ export function Footer() {
         <div className="flex flex-col items-center border-t border-slate-400/10 py-6 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             {/* Instagram Icon */}
-            <Link href="https://www.instagram.com/" className="group" aria-label="Instagram">
-              <Image src={InstagramIcon} alt="Instagram" width={24} height={24} />
+            <Link
+              href="https://www.instagram.com/"
+              className="group"
+              aria-label="Instagram"
+            >
+              <Image
+                src={InstagramIcon}
+                alt="Instagram"
+                width={24}
+                height={24}
+              />
             </Link>
             {/* X (formerly Twitter) Icon */}
             <Link href="https://twitter.com/" className="group" aria-label="X">
               <Image src={XIcon} alt="X" width={24} height={24} />
             </Link>
             {/* LinkedIn Icon */}
-            <Link href="https://www.linkedin.com/" className="group" aria-label="LinkedIn">
+            <Link
+              href="https://www.linkedin.com/"
+              className="group"
+              aria-label="LinkedIn"
+            >
               <Image src={LinkedInIcon} alt="LinkedIn" width={24} height={24} />
             </Link>
             {/* Facebook Icon */}
-            <Link href="https://www.facebook.com/" className="group" aria-label="Facebook">
+            <Link
+              href="https://www.facebook.com/"
+              className="group"
+              aria-label="Facebook"
+            >
               <Image src={FacebookIcon} alt="Facebook" width={24} height={24} />
             </Link>
           </div>
           <p className="mt-6 text-sm text-white sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Genesis Trainings. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} Genesis Trainings. All
+            rights reserved.
           </p>
         </div>
       </Container>
