@@ -3,7 +3,7 @@ export const courses = [
     index: 1,
     title: "Graphic Designer Expert (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample02.png",
+    image: "/images/courses_imgs/GraphicDesigner.jpeg",
     description:
       "Start your career as a graphic designer and master tools like Photoshop, Illustrator, and Canva. Build your own portfolio.",
     details: {
@@ -125,7 +125,7 @@ export const courses = [
     index: 2,
     title: "Shopify Ecommerce Programe",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample02.png",
+    image: "/images/courses_imgs/Shopify.jpeg",
     description:
       "Build your own ecommerce business from scratch using Shopify, and learn everything from sourcing to scaling.",
     details: {
@@ -230,7 +230,7 @@ export const courses = [
     index: 3,
     title: "Digital Marketing Expert (AI Powered)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample.png",
+    image: "/images/courses_imgs/DigitalMarketing.jpeg",
     description:
       "Master digital marketing using AI tools for SEO, paid ads, social media, and more \u2014 build your career or agency.",
     details: {
@@ -336,7 +336,7 @@ export const courses = [
     index: 4,
     title: "AI/ML Developer (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample03.png",
+    image: "/images/courses_imgs/AI.jpeg",
     description:
       "Learn AI/ML from scratch and build real-world projects using Python, TensorFlow, and modern AI tools.",
     details: {
@@ -432,7 +432,7 @@ export const courses = [
     index: 5,
     title: "Video Editing Expert (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample03.png",
+    image: "/images/courses_imgs/Video.jpeg",
     description:
       "Learn AI/ML from scratch and build real-world projects using Python, TensorFlow, and modern AI tools.",
     details: {
@@ -523,6 +523,113 @@ export const courses = [
         },
         {
           heading: "Freelancing & Career Guide",
+          points: ["Platforms like Upwork, Fiverr, Behance ", "How to price, pitch, and deliver video projects", "Building a personal editing brand"],
+        },
+      ],
+      careerOutlook:
+        "Video editing is one of the most in-demand skills in the digital age. From YouTube and Instagram to corporate ads and film — every industry needs editors. This course helps you build real income potential as a freelancer or in-house editor.",
+    },
+  },
+  {
+    index: 6,
+    title: "Full Stack Web Developer",
+    heroImage: "/images/screenshots/Background1.jpg",
+    image: "/images/courses_imgs/Full.jpeg",
+    description:
+      "Master Full-Stack Web Development with our 3-month hands-on MERN course designed to build real-world applications.",
+    details: {
+      date: "June 14, 2025",
+      duration: "3 Months + 1 Year Support",
+      timings: "Flexible (set with your batch)",
+      fee: "49,000 PKR",
+      highlights: [
+        "Step-by-step learning from day 1",
+        "Get 1-Year Trainer Support",
+        "Genesis Certificate upon assessment",
+        "Build job-ready AI/ML projects",
+      ],
+      content: [
+        "Python for Data Science",
+        "Supervised & Unsupervised Learning",
+        "Deep Learning & AI Tools",
+        "Model Building and Deployment",
+        "Freelancing and Career Prep",
+      ],
+      whyJoin: [
+        "Learn from experienced video editors and content creators ",
+        "Get 1-Year Trainer Support ",
+        "Access to a Private Creative Community" ,
+        "Earn Genesis Certificate upon assessment", 
+        "Practical learning from Day 1" ,
+        "Build a real-world portfolio to attract clients ",
+        "Learn editing for YouTube, Reels, Films & Freelancing",
+      ],
+      coreSkills: [
+        "Fundamentals of Video Editing", 
+        "Timeline Editing & Storyboarding", 
+        "Color Correction & Grading" ,
+        "Transitions, Effects, and Motion Graphics" ,
+        "Audio Editing & Sound Design ",
+        "Editing for Social Media (YouTube, Reels, Shorts)" ,
+        "Exporting & Format Optimization" ,
+        "Client-Based Project Editing ",
+        "Freelancing & Portfolio Building",
+      ],
+      tools: [
+        "Adobe Premiere Pro", 
+        "Adobe After Effects (Intro)", 
+        "CapCut & VN (for mobile)", 
+        "Audacity (for audio cleanup)", 
+        "Use of Stock Assests",
+      ],
+      moduleSnapshot: [
+        {
+          heading: "01: Web Fundamentals & Development Tools ",
+          points: [
+            "Introduction to the Internet, HTTP & DNS",
+            "Types of video content: Social, Documentary, Commercial",
+          ],
+        },
+        {
+          heading: "02: HTML & CSS Essentials",
+          points: [
+            "Setup Premiere Pro / DaVinci Resolve", 
+            "Getting started with VS Code, Git & GitHub",
+            "" ],
+        },
+        {
+          heading: "03: Responsive Design & JavaScript Basics",
+          points: ["Trimming, splitting, and rearranging clips", "Working with B-roll and storytelling"],
+        },
+        {
+          heading: "04: Modern JavaScript & Git Collaboration",
+          points: ["Basic correction, LUTs, cinematic looks", " Smooth transitions, fade-ins/outs, match cuts"],
+        },
+        {
+          heading: "05: React.js Fundamentals",
+          points: ["Lower thirds, captions, animated intros using AE or CapCut "],
+        },
+        {
+          heading: "06: Advanced React & State Management",
+          points: [
+            "Removing noise, syncing audio, adding background music ",
+            "Using sound effects for storytelling ",
+          ],
+        },
+        {
+          heading: "07: Backend Foundations with Node.js & MongoDB",
+          points: [" Aspect ratios, subtitles, branding overlays", "Creating viral hooks and engaging edits "],
+        },
+        {
+          heading: "08: API Development & Testing",
+          points: ["Event edit, promo video, YouTube vlog or ad", " Showreel preparation"],
+        },
+        {
+          heading: "09: Authentication & Authorization",
+          points: ["Platforms like Upwork, Fiverr, Behance ", "How to price, pitch, and deliver video projects", "Building a personal editing brand"],
+        },
+        {
+          heading: "10: Full Stack Integration",
           points: ["Platforms like Upwork, Fiverr, Behance ", "How to price, pitch, and deliver video projects", "Building a personal editing brand"],
         },
       ],
