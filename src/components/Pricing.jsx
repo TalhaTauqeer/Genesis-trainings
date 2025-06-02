@@ -17,12 +17,8 @@ export function Pricing() {
       <Container>
         <div className="mb-16 md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Simple pricing, for everyone.
+            OUR TRAINING PROGRAMS
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
-            It doesn’t matter what size your business is, our software won’t
-            work well for you.
-          </p>
         </div>
 
         {/* Carousel with react-multi-carousel */}

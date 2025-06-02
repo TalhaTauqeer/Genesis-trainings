@@ -6,7 +6,7 @@ export default function FormPage() {
       {/* Hero Section */}
       <section
         style={{
-          backgroundImage: 'url("/images/screenshots/enrollment.png")',
+          backgroundImage: 'url("/images/screenshots/Registration.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '620px',
@@ -26,21 +26,6 @@ export default function FormPage() {
             borderRadius: '8px',
           }}
         >
-          <h1
-            style={{
-              fontSize: '3rem',
-              fontWeight: 'bold',
-              marginBottom: '10px',
-            }}
-          >
-            Registration Form
-          </h1>
-          <p
-            style={{ fontSize: '1.5rem', maxWidth: '600px', margin: '0 auto' }}
-          >
-            Please fill out the form below to secure your spot in our training
-            program. Our team will contact you shortly with further details.
-          </p>
         </div>
       </section>
 
