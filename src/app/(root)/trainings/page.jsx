@@ -12,7 +12,7 @@ export default function Trainings() {
         style={{
           position: 'relative',
           width: '100%',
-          height: '400px' /* Adjust the height as needed */,
+          height: '300px' /* Adjust the height as needed */,
         }}
       >
         <Image
@@ -30,8 +30,7 @@ export default function Trainings() {
             paddingTop: '4rem',
             paddingBottom: '4rem',
           }}
-        >
-        </div>
+        ></div>
         <div
           style={{
             height: '5px',
@@ -41,118 +40,37 @@ export default function Trainings() {
         ></div>
       </section>
 
-
-      {/* Courses Section */}
-      <section style={{ paddingTop: '4rem', paddingBottom: '4rem' }}>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr',
-            gap: '2rem',
-            maxWidth: '1200px',
-            margin: '0 auto',
-          }}
-        >
-          {courses.map((course) => (
+      <section className="grid w-full grid-cols-3 gap-10 px-32 py-14">
+        {courses.map((course, index) => (
+          <div
+            key={index}
+            className="h-full overflow-hidden rounded-2xl bg-white shadow-lg"
+          >
             <div
-              key={course.index}
+              className="h-[250px]"
               style={{
-                display: 'flex',
-                flexDirection: 'column',   // make it flex column
-                border: '1px solid #E0E0E0',
-                borderRadius: '8px',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-                transition: 'all 0.3s ease',
-                maxHeight: "500px",
-                // optionally, you can add minHeight to keep uniformity
+                backgroundImage: `url('${course.image}')`,
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
               }}
-            >
-              {/* Image */}
-              <Image
-                src={course.image}
-                alt={`Course Image ${course.index}`}
-                width={500}
-                height={350}
-                style={{
-                  objectFit: 'cover',
-                  display: 'block',
-                  borderTopLeftRadius: '8px',
-                  borderTopRightRadius: '8px',
-                }}
-              />
-
-              {/* Content: title, date, description */}
-              <div 
-                className='w-full px-3 py-2'
-                style={{
-                  flexGrow: 1  // <-- make this grow to fill available space
-                }}
+            ></div>
+            <div className="relative flex h-full flex-col gap-2 p-5 pt-5">
+              <div className="text-lg font-semibold">{course.title}</div>
+              <div className="flex justify-between text-[15px] font-light text-[#004875]">
+                <p>Starting From</p>
+                <p>{course.details.date}</p>
+              </div>
+              <div className="text-md font-light">{course.description}</div>
+              <Button
+                className="mt-3 w-full rounded-lg bg-[#0F172B] hover:bg-[#004875]"
+                href={`/courses/${course.index}`}
               >
-                <h3
-                  style={{
-                    fontSize: '1.25rem',
-                    fontWeight: 'bold',
-                    color: '#333',
-                    marginBottom: '1rem',
-                    marginTop: '1rem',
-                  }}
-                >
-                  {course.title}
-                </h3>
-                <div
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    marginBottom: '1rem',
-                  }}
-                >
-                  <p style={{ fontSize: '0.875rem', color: '#004875' }}>
-                    Starting From
-                  </p>
-                  <p style={{ fontSize: '0.875rem', color: '#004875' }}>
-                    {course.details.date}
-                  </p>
-                </div>
-                <p
-                  style={{
-                    fontSize: '0.875rem',
-                    color: '#333',
-                    marginBottom: '1rem',
-                  }}
-                >
-                  {course.description}
-                </p>
-                <div
-                  style={{
-                    borderBottom: '1px solid #004875',
-                    marginTop: '1rem',
-                    marginBottom: '1rem',
-                  }}
-                ></div>
-              </div>
-
-              {/* Enroll Now Button */}
-              <div className='px-3 mb-4'>
-                <Button
-                  href={`/courses/${course.index}`}
-                  style={{
-                    width: '100%',
-                    backgroundColor: '#004875',
-                    color: 'white',
-                    padding: '0.75rem',
-                    borderRadius: '5px',
-                    textAlign: 'center',
-                    textDecoration: 'none',
-                    display: 'inline-block',
-                  }}
-                >
-                  Enroll Now
-                </Button>
-              </div>
+                Enroll Now
+              </Button>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </section>
     </div>
   )

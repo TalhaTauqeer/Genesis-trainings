@@ -13,7 +13,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center">
           <Image src={longLogo} alt="Logo" className="h-11 w-auto" />
         </Link>
-        <div className="flex space-x-4">
+        <div className="flex space-x-8">
           <NavLink href="/trainings">Trainings</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/contact">Contact Us</NavLink>
