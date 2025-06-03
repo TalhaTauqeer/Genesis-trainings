@@ -55,14 +55,14 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to Graphic Design",
+          heading: "01: Introduction to Graphic Design",
           points: [
             "Principles of Design",
             "Understanding Visual Communication",
           ],
         },
         {
-          heading: "Typography & Color Theory",
+          heading: "02: Typography & Color Theory",
           points: [
             "Choosing fonts",
             "Creating color palettes",
@@ -70,17 +70,17 @@ export const courses = [
           ],
         },
         {
-          heading: "Design Tools Mastery",
+          heading: "03: Design Tools Mastery",
           points: [
             "Photoshop and Illustrator basics for image and vector editing",
           ],
         },
         {
-          heading: "Logo & Brand Identity Design",
+          heading: "04: Logo & Brand Identity Design",
           points: ["Create brand kits", "Logos", "Mockups for real clients"],
         },
         {
-          heading: "Social Media & Digital Design",
+          heading: "05: Social Media & Digital Design",
           points: [
             "Banners",
             "Posts",
@@ -88,15 +88,15 @@ export const courses = [
           ],
         },
         {
-          heading: "Print Media Design",
+          heading: "06: Print Media Design",
           points: ["Posters", "Brochures", "Business cards", "Packaging"],
         },
         {
-          heading: "Portfolio & Real-World Projects",
+          heading: "07: Portfolio & Real-World Projects",
           points: ["Design a complete brand identity", "Pitch deck"],
         },
         {
-          heading: "Freelancing & Career Guide",
+          heading: "08: Freelancing & Career Guide",
           points: [
             "Upwork",
             "Fiverr",
@@ -168,32 +168,32 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to Ecommerce",
+          heading: "01: Introduction to Ecommerce",
           points: [
             "What ecommerce is and why it matters",
             "Opportunities and challenges in Pakistan",
           ],
         },
         {
-          heading: "Product Research & Selection",
+          heading: "02: Product Research & Selection",
           points: ["Find winning products", "Analyze market demand and niches"],
         },
         {
-          heading: "Sourcing Products",
+          heading: "03: Sourcing Products",
           points: [
             "Source locally/internationally",
             "Negotiate and choose suppliers",
           ],
         },
         {
-          heading: "Setting Up Your Shopify Store",
+          heading: "04: Setting Up Your Shopify Store",
           points: [
             "Launch step-by-step",
             "Design customization and UX optimization",
           ],
         },
         {
-          heading: "Logistics & COD",
+          heading: "05: Logistics & COD",
           points: [
             "Manage shipments",
             "Setup COD accounts",
@@ -201,21 +201,21 @@ export const courses = [
           ],
         },
         {
-          heading: "Advertising & Social Media Marketing",
+          heading: "06: Advertising & Social Media Marketing",
           points: [
             "Run Facebook, Instagram & Google ads",
             "Create high-converting content",
           ],
         },
         {
-          heading: "Ad Creation with Proven Strategies",
+          heading: "07: Ad Creation with Proven Strategies",
           points: [
             "Write engaging ad copy",
             "Use smart visuals and optimization",
           ],
         },
         {
-          heading: "Customer Support & Experience",
+          heading: "08: Customer Support & Experience",
           points: [
             "Communicate with clients",
             "Manage reviews and build trust",
@@ -276,21 +276,21 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Digital Marketing",
+          heading: "01: Digital Marketing",
           points: [
             "Intro to digital vs traditional marketing",
             "Strategies to boost leads and sales",
           ],
         },
         {
-          heading: "Social Media Marketing",
+          heading: "02: Social Media Marketing",
           points: [
             "Run campaigns on FB, IG, LinkedIn, TikTok, YouTube",
             "Use organic + paid AI strategies",
           ],
         },
         {
-          heading: "Content Creation & Branding",
+          heading: "03: Content Creation & Branding",
           points: [
             "Canva design",
             "AI captions & visuals",
@@ -298,33 +298,33 @@ export const courses = [
           ],
         },
         {
-          heading: "Search Engine Optimization (SEO)",
+          heading: "04: Search Engine Optimization (SEO)",
           points: [
             "On/off-page SEO",
             "Keyword research & content optimization",
           ],
         },
         {
-          heading: "Facebook & Instagram Ads",
+          heading: "05: Facebook & Instagram Ads",
           points: ["Set up Business Manager", "Use FB Pixel, retargeting"],
         },
         {
-          heading: "LinkedIn Marketing",
+          heading: "06: LinkedIn Marketing",
           points: ["Profile & page strategy", "Cold outreach + ads"],
         },
         {
-          heading: "TikTok & YouTube Marketing",
+          heading: "07: TikTok & YouTube Marketing",
           points: ["Short form video marketing", "YouTube SEO + monetization"],
         },
         {
-          heading: "Email Marketing",
+          heading: "08: Email Marketing",
           points: [
             "Cold emailing tools & scraping",
             "Strategy to convert leads",
           ],
         },
         {
-          heading: "Freelancing & Agency Setup",
+          heading: "09: Freelancing & Agency Setup",
           points: ["Create a portfolio", "Pitch to global clients"],
         },
       ],
@@ -381,30 +381,30 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to AI & ML",
+          heading: "01: Introduction to AI & ML",
           points: [
             "What is AI & ML",
             "Types: Supervised, Unsupervised, Reinforcement",
           ],
         },
         {
-          heading: "Python for AI",
+          heading: "02: Python for AI",
           points: ["Python basics", "Data structures & loops for ML"],
         },
         {
-          heading: "Data Handling & Preprocessing",
+          heading: "03: Data Handling & Preprocessing",
           points: ["Clean & prep datasets", "Use Pandas & NumPy"],
         },
         {
-          heading: "Supervised Learning",
+          heading: "04: Supervised Learning",
           points: ["Regression models", "Accuracy and recall evaluation"],
         },
         {
-          heading: "Unsupervised Learning",
+          heading: "05: Unsupervised Learning",
           points: ["K-Means clustering", "Dimensionality reduction"],
         },
         {
-          heading: "AI Project Building",
+          heading: "06: AI Project Building",
           points: [
             "Spam classifier",
             "House price prediction",
@@ -412,15 +412,15 @@ export const courses = [
           ],
         },
         {
-          heading: "Intro to Deep Learning",
+          heading: "07: Intro to Deep Learning",
           points: ["Neural networks", "How modern AI works"],
         },
         {
-          heading: "Ethics & Responsible AI",
+          heading: "08: Ethics & Responsible AI",
           points: ["Bias in AI", "Designing fair and safe models"],
         },
         {
-          heading: "Freelancing & Career Guide",
+          heading: "09: Freelancing & Career Guide",
           points: ["Freelance platforms", "Build profile and pitch clients"],
         },
       ],
@@ -484,47 +484,47 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to Video Editing",
+          heading: "01: Introduction to Video Editing",
           points: [
             "What is editing & why it matters",
             "Types of video content: Social, Documentary, Commercial",
           ],
         },
         {
-          heading: "Understanding Software & Workflow",
+          heading: "02: Understanding Software & Workflow",
           points: [
             "Setup Premiere Pro / DaVinci Resolve", 
             "Project setup, timelines, and media organization" ],
         },
         {
-          heading: "Cutting & Editing Basics ",
+          heading: "03: Cutting & Editing Basics ",
           points: ["Trimming, splitting, and rearranging clips", "Working with B-roll and storytelling"],
         },
         {
-          heading: "Color Correction & Transitions ",
+          heading: "04: Color Correction & Transitions ",
           points: ["Basic correction, LUTs, cinematic looks", " Smooth transitions, fade-ins/outs, match cuts"],
         },
         {
-          heading: "Text, Titles & Motion Graphics",
+          heading: "05: Text, Titles & Motion Graphics",
           points: ["Lower thirds, captions, animated intros using AE or CapCut "],
         },
         {
-          heading: "Sound & Audio Editing ",
+          heading: "06: Sound & Audio Editing ",
           points: [
             "Removing noise, syncing audio, adding background music ",
             "Using sound effects for storytelling ",
           ],
         },
         {
-          heading: " Editing for Platforms (YouTube, Reels, Shorts)",
+          heading: "07: Editing for Platforms (YouTube, Reels, Shorts)",
           points: [" Aspect ratios, subtitles, branding overlays", "Creating viral hooks and engaging edits "],
         },
         {
-          heading: "Real Client Projects & Portfolio",
+          heading: "08: Real Client Projects & Portfolio",
           points: ["Event edit, promo video, YouTube vlog or ad", " Showreel preparation"],
         },
         {
-          heading: "Freelancing & Career Guide",
+          heading: "09: Freelancing & Career Guide",
           points: ["Platforms like Upwork, Fiverr, Behance ", "How to price, pitch, and deliver video projects", "Building a personal editing brand"],
         },
       ],

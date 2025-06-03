@@ -32,7 +32,7 @@ export function Footer() {
           <div className="flex gap-x-6">
             {/* Instagram Icon */}
             <Link
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/genesis_trainings/"
               className="group"
               aria-label="Instagram"
             >
@@ -43,13 +43,9 @@ export function Footer() {
                 height={24}
               />
             </Link>
-            {/* X (formerly Twitter) Icon */}
-            <Link href="https://twitter.com/" className="group" aria-label="X">
-              <Image src={XIcon} alt="X" width={24} height={24} />
-            </Link>
             {/* LinkedIn Icon */}
             <Link
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/company/genesis-trainings-official/"
               className="group"
               aria-label="LinkedIn"
             >
@@ -57,7 +53,7 @@ export function Footer() {
             </Link>
             {/* Facebook Icon */}
             <Link
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/gentrainings"
               className="group"
               aria-label="Facebook"
             >

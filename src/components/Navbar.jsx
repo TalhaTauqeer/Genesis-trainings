@@ -14,9 +14,9 @@ export function Navbar() {
       </Link>
 
       {/* Centered Links */}
-      <div className="flex flex-grow justify-center space-x-18">
+      <div className="flex flex-grow justify-center space-x-8">
+        <NavLink href="/about">About Us</NavLink>
         <NavLink href="/trainings">Trainings</NavLink>
-        <NavLink href="/about">About</NavLink>
         <NavLink href="/contact">Contact Us</NavLink>
       </div>
 

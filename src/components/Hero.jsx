@@ -54,18 +54,6 @@ export function Hero() {
       {/* Centered Text Section */}
 <section className="mx-auto mt-16 mb-24 max-w-[90vw] px-2 md:px-4 text-center md:max-w-6xl">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[#004875]">
-    {/* Our Mission */}
-    <div className="md:border-r-2 md:border-[#004875] pr-8 md:pr-12">
-      <h2 className="mb-4 text-3xl font-bold tracking-wide md:text-4xl">OUR MISSION</h2>
-      <img
-        src="/images/icons/Mission.png"
-        alt="Mission Icon"
-        className="mx-auto mb-6 w-12 h-12"
-      />
-      <p className="text-lg leading-relaxed whitespace-pre-line md:text-xl">
-        {`At Genesis Trainings, our mission is to empower individuals and organizations through transformative IT education and skills development. We are committed to bridging the technology skills gap by providing high-quality, practical, and industry-relevant training.`}
-      </p>
-    </div>
 
     {/* Our Vision */}
     <div className="md:border-r-2 md:border-[#004875] px-8 md:px-12">
@@ -77,6 +65,19 @@ export function Hero() {
       />
       <p className="text-lg leading-relaxed whitespace-pre-line md:text-xl">
         {`To be a leading provider of advanced IT education that empowers individuals to achieve self-employment and drive innovation.`}
+      </p>
+    </div>
+
+    {/* Our Mission */}
+    <div className="md:border-r-2 md:border-[#004875] pr-8 md:pr-12">
+      <h2 className="mb-4 text-3xl font-bold tracking-wide md:text-4xl">OUR MISSION</h2>
+      <img
+        src="/images/icons/Mission.png"
+        alt="Mission Icon"
+        className="mx-auto mb-6 w-12 h-12"
+      />
+      <p className="text-lg leading-relaxed whitespace-pre-line md:text-xl">
+        {`At Genesis Trainings, our mission is to empower individuals and organizations through transformative IT education and skills development. We are committed to bridging the technology skills gap by providing high-quality, practical, and industry-relevant training.`}
       </p>
     </div>
 
