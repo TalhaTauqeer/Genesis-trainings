@@ -1,4 +1,4 @@
-import { Faqs } from '@/components/Faqs'
+import { FeaturedSection } from '@/components/FeaturedSection'
 import { Hero } from '@/components/Hero'
 import { Pricing } from '@/components/Pricing'
 
@@ -8,7 +8,7 @@ export default function Home() {
       <main>
         <Hero />
         <Pricing />
-        <Faqs />
+        <FeaturedSection />
       </main>
     </>
   )

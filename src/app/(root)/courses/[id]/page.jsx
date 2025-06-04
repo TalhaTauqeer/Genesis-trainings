@@ -73,7 +73,7 @@ export default function CoursePage({ params }) {
               cursor: 'pointer',
               border: 'none',
               textDecoration: 'none',
-              marginTop: '30px',
+              marginTop: '25px',
               display: 'inline-block',
             }}
           >
@@ -239,9 +239,11 @@ export default function CoursePage({ params }) {
         <div
           style={{
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            flexDirection: 'row',      // changed from 'column' to 'row'
+            justifyContent: 'center',  // center items horizontally
+            flexWrap: 'wrap',          // allow wrapping if too wide
             marginTop: '5px',
+            gap: '30px',               // space between items horizontally and vertically
           }}
         >
           {course.details.tools.map((item, index) => (
@@ -249,10 +251,10 @@ export default function CoursePage({ params }) {
               key={index}
               style={{
                 fontSize: '1.2rem',
-                marginBottom: '15px',
                 display: 'flex',
                 alignItems: 'center',
                 textAlign: 'center',
+                marginBottom: '20px',        // remove vertical margin, spacing done by gap
               }}
             >
               <span
@@ -268,7 +270,8 @@ export default function CoursePage({ params }) {
         </div>
       </section>
 
-      {/* Module Snapshot */}
+
+  {/* Module Snapshot */}
       <section
         style={{
           backgroundColor: '#ffffff',
@@ -327,6 +330,25 @@ export default function CoursePage({ params }) {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Enroll Now Button */}
+        <div style={{ textAlign: 'center', marginTop: '40px' }}>
+          <Button
+            href="/form"
+            style={{
+              backgroundColor: '#004875',
+              color: 'white',
+              padding: '12px 32px',
+              fontSize: '1.2rem',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              border: 'none',
+              textDecoration: 'none',
+            }}
+          >
+            Enroll Now
+          </Button>
         </div>
       </section>
 

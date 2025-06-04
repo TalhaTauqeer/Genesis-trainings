@@ -12,7 +12,7 @@ export default function Trainings() {
         style={{
           position: 'relative',
           width: '100%',
-          height: '400px' /* Adjust the height as needed */,
+          height: '300px' /* Adjust the height as needed */,
         }}
       >
         <Image
