@@ -21,7 +21,7 @@ export function Navbar() {
       </div>
 
       {/* Enroll Now button */}
-      <Button href="/trainings" className="ml-4">
+      <Button href="/trainings" className="ml-4 rounded-lg">
         Enroll Now
       </Button>
     </nav>
