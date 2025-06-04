@@ -3,7 +3,7 @@ export const courses = [
     index: 1,
     title: "Graphic Designer Expert (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample02.png",
+    image: "/images/courses_imgs/GraphicDesigner.jpeg",
     description:
       "Start your career as a graphic designer and master tools like Photoshop, Illustrator, and Canva. Build your own portfolio.",
     details: {
@@ -55,14 +55,14 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to Graphic Design",
+          heading: "01: Introduction to Graphic Design",
           points: [
             "Principles of Design",
             "Understanding Visual Communication",
           ],
         },
         {
-          heading: "Typography & Color Theory",
+          heading: "02: Typography & Color Theory",
           points: [
             "Choosing fonts",
             "Creating color palettes",
@@ -70,17 +70,17 @@ export const courses = [
           ],
         },
         {
-          heading: "Design Tools Mastery",
+          heading: "03: Design Tools Mastery",
           points: [
             "Photoshop and Illustrator basics for image and vector editing",
           ],
         },
         {
-          heading: "Logo & Brand Identity Design",
+          heading: "04: Logo & Brand Identity Design",
           points: ["Create brand kits", "Logos", "Mockups for real clients"],
         },
         {
-          heading: "Social Media & Digital Design",
+          heading: "05: Social Media & Digital Design",
           points: [
             "Banners",
             "Posts",
@@ -88,15 +88,15 @@ export const courses = [
           ],
         },
         {
-          heading: "Print Media Design",
+          heading: "06: Print Media Design",
           points: ["Posters", "Brochures", "Business cards", "Packaging"],
         },
         {
-          heading: "Portfolio & Real-World Projects",
+          heading: "07: Portfolio & Real-World Projects",
           points: ["Design a complete brand identity", "Pitch deck"],
         },
         {
-          heading: "Freelancing & Career Guide",
+          heading: "08: Freelancing & Career Guide",
           points: [
             "Upwork",
             "Fiverr",
@@ -125,7 +125,7 @@ export const courses = [
     index: 2,
     title: "Shopify Ecommerce Programe",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample02.png",
+    image: "/images/courses_imgs/Shopify.jpeg",
     description:
       "Build your own ecommerce business from scratch using Shopify, and learn everything from sourcing to scaling.",
     details: {
@@ -168,32 +168,32 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to Ecommerce",
+          heading: "01: Introduction to Ecommerce",
           points: [
             "What ecommerce is and why it matters",
             "Opportunities and challenges in Pakistan",
           ],
         },
         {
-          heading: "Product Research & Selection",
+          heading: "02: Product Research & Selection",
           points: ["Find winning products", "Analyze market demand and niches"],
         },
         {
-          heading: "Sourcing Products",
+          heading: "03: Sourcing Products",
           points: [
             "Source locally/internationally",
             "Negotiate and choose suppliers",
           ],
         },
         {
-          heading: "Setting Up Your Shopify Store",
+          heading: "04: Setting Up Your Shopify Store",
           points: [
             "Launch step-by-step",
             "Design customization and UX optimization",
           ],
         },
         {
-          heading: "Logistics & COD",
+          heading: "05: Logistics & COD",
           points: [
             "Manage shipments",
             "Setup COD accounts",
@@ -201,21 +201,21 @@ export const courses = [
           ],
         },
         {
-          heading: "Advertising & Social Media Marketing",
+          heading: "06: Advertising & Social Media Marketing",
           points: [
             "Run Facebook, Instagram & Google ads",
             "Create high-converting content",
           ],
         },
         {
-          heading: "Ad Creation with Proven Strategies",
+          heading: "07: Ad Creation with Proven Strategies",
           points: [
             "Write engaging ad copy",
             "Use smart visuals and optimization",
           ],
         },
         {
-          heading: "Customer Support & Experience",
+          heading: "08: Customer Support & Experience",
           points: [
             "Communicate with clients",
             "Manage reviews and build trust",
@@ -230,7 +230,7 @@ export const courses = [
     index: 3,
     title: "Digital Marketing Expert (AI Powered)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample.png",
+    image: "/images/courses_imgs/DigitalMarketing.jpeg",
     description:
       "Master digital marketing using AI tools for SEO, paid ads, social media, and more \u2014 build your career or agency.",
     details: {
@@ -276,21 +276,21 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Digital Marketing",
+          heading: "01: Digital Marketing",
           points: [
             "Intro to digital vs traditional marketing",
             "Strategies to boost leads and sales",
           ],
         },
         {
-          heading: "Social Media Marketing",
+          heading: "02: Social Media Marketing",
           points: [
             "Run campaigns on FB, IG, LinkedIn, TikTok, YouTube",
             "Use organic + paid AI strategies",
           ],
         },
         {
-          heading: "Content Creation & Branding",
+          heading: "03: Content Creation & Branding",
           points: [
             "Canva design",
             "AI captions & visuals",
@@ -298,33 +298,33 @@ export const courses = [
           ],
         },
         {
-          heading: "Search Engine Optimization (SEO)",
+          heading: "04: Search Engine Optimization (SEO)",
           points: [
             "On/off-page SEO",
             "Keyword research & content optimization",
           ],
         },
         {
-          heading: "Facebook & Instagram Ads",
+          heading: "05: Facebook & Instagram Ads",
           points: ["Set up Business Manager", "Use FB Pixel, retargeting"],
         },
         {
-          heading: "LinkedIn Marketing",
+          heading: "06: LinkedIn Marketing",
           points: ["Profile & page strategy", "Cold outreach + ads"],
         },
         {
-          heading: "TikTok & YouTube Marketing",
+          heading: "07: TikTok & YouTube Marketing",
           points: ["Short form video marketing", "YouTube SEO + monetization"],
         },
         {
-          heading: "Email Marketing",
+          heading: "08: Email Marketing",
           points: [
             "Cold emailing tools & scraping",
             "Strategy to convert leads",
           ],
         },
         {
-          heading: "Freelancing & Agency Setup",
+          heading: "09: Freelancing & Agency Setup",
           points: ["Create a portfolio", "Pitch to global clients"],
         },
       ],
@@ -336,7 +336,7 @@ export const courses = [
     index: 4,
     title: "AI/ML Developer (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample03.png",
+    image: "/images/courses_imgs/AI.jpeg",
     description:
       "Learn AI/ML from scratch and build real-world projects using Python, TensorFlow, and modern AI tools.",
     details: {
@@ -381,30 +381,30 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to AI & ML",
+          heading: "01: Introduction to AI & ML",
           points: [
             "What is AI & ML",
             "Types: Supervised, Unsupervised, Reinforcement",
           ],
         },
         {
-          heading: "Python for AI",
+          heading: "02: Python for AI",
           points: ["Python basics", "Data structures & loops for ML"],
         },
         {
-          heading: "Data Handling & Preprocessing",
+          heading: "03: Data Handling & Preprocessing",
           points: ["Clean & prep datasets", "Use Pandas & NumPy"],
         },
         {
-          heading: "Supervised Learning",
+          heading: "04: Supervised Learning",
           points: ["Regression models", "Accuracy and recall evaluation"],
         },
         {
-          heading: "Unsupervised Learning",
+          heading: "05: Unsupervised Learning",
           points: ["K-Means clustering", "Dimensionality reduction"],
         },
         {
-          heading: "AI Project Building",
+          heading: "06: AI Project Building",
           points: [
             "Spam classifier",
             "House price prediction",
@@ -412,15 +412,15 @@ export const courses = [
           ],
         },
         {
-          heading: "Intro to Deep Learning",
+          heading: "07: Intro to Deep Learning",
           points: ["Neural networks", "How modern AI works"],
         },
         {
-          heading: "Ethics & Responsible AI",
+          heading: "08: Ethics & Responsible AI",
           points: ["Bias in AI", "Designing fair and safe models"],
         },
         {
-          heading: "Freelancing & Career Guide",
+          heading: "09: Freelancing & Career Guide",
           points: ["Freelance platforms", "Build profile and pitch clients"],
         },
       ],
@@ -432,26 +432,28 @@ export const courses = [
     index: 5,
     title: "Video Editing Expert (From Scratch)",
     heroImage: "/images/screenshots/Background1.jpg",
-    image: "/images/screenshots/CourseCard_Sample03.png",
+    image: "/images/courses_imgs/Video.jpeg",
     description:
-      "Learn AI/ML from scratch and build real-world projects using Python, TensorFlow, and modern AI tools.",
+      "Become a video editing expert and turn raw footage into stunning stories with our 3-month hands-on course.",
     details: {
       date: "June 14, 2025",
       duration: "3 Months + 1 Year Support",
       timings: "Flexible (set with your batch)",
       fee: "26,900 PKR",
       highlights: [
-        "Step-by-step learning from day 1",
-        "Get 1-Year Trainer Support",
-        "Genesis Certificate upon assessment",
-        "Build job-ready AI/ML projects",
+        "Start editing from Day 1",
+        "1-Year Trainer & Portfolio Support",
+        "Certificate from Genesis upon assessment",
+        "Learn editing for YouTube, Reels, Ads & More",
+        "Edit real-world projects for clients & brands",
       ],
       content: [
-        "Python for Data Science",
-        "Supervised & Unsupervised Learning",
-        "Deep Learning & AI Tools",
-        "Model Building and Deployment",
-        "Freelancing and Career Prep",
+        "Editing Fundamentals & Storytelling",
+        "Hands-on with Premiere Pro & Mobile Apps",
+        "Color Grading, Text & Motion Graphics",
+        "Audio Mixing & Cleanup",
+        "Platform-based Editing (Reels, YouTube, Ads)",
+        "Real Client Project Editing & Freelance Prep",
       ],
       whyJoin: [
         "Learn from experienced video editors and content creators ",
@@ -482,52 +484,193 @@ export const courses = [
       ],
       moduleSnapshot: [
         {
-          heading: "Introduction to Video Editing",
+          heading: "01: Introduction to Video Editing",
           points: [
             "What is editing & why it matters",
             "Types of video content: Social, Documentary, Commercial",
           ],
         },
         {
-          heading: "Understanding Software & Workflow",
+          heading: "02: Understanding Software & Workflow",
           points: [
             "Setup Premiere Pro / DaVinci Resolve", 
             "Project setup, timelines, and media organization" ],
         },
         {
-          heading: "Cutting & Editing Basics ",
+          heading: "03: Cutting & Editing Basics ",
           points: ["Trimming, splitting, and rearranging clips", "Working with B-roll and storytelling"],
         },
         {
-          heading: "Color Correction & Transitions ",
+          heading: "04: Color Correction & Transitions ",
           points: ["Basic correction, LUTs, cinematic looks", " Smooth transitions, fade-ins/outs, match cuts"],
         },
         {
-          heading: "Text, Titles & Motion Graphics",
+          heading: "05: Text, Titles & Motion Graphics",
           points: ["Lower thirds, captions, animated intros using AE or CapCut "],
         },
         {
-          heading: "Sound & Audio Editing ",
+          heading: "06: Sound & Audio Editing ",
           points: [
             "Removing noise, syncing audio, adding background music ",
             "Using sound effects for storytelling ",
           ],
         },
         {
-          heading: " Editing for Platforms (YouTube, Reels, Shorts)",
+          heading: "07: Editing for Platforms (YouTube, Reels, Shorts)",
           points: [" Aspect ratios, subtitles, branding overlays", "Creating viral hooks and engaging edits "],
         },
         {
-          heading: "Real Client Projects & Portfolio",
+          heading: "08: Real Client Projects & Portfolio",
           points: ["Event edit, promo video, YouTube vlog or ad", " Showreel preparation"],
         },
         {
-          heading: "Freelancing & Career Guide",
+          heading: "09: Freelancing & Career Guide",
           points: ["Platforms like Upwork, Fiverr, Behance ", "How to price, pitch, and deliver video projects", "Building a personal editing brand"],
         },
       ],
       careerOutlook:
         "Video editing is one of the most in-demand skills in the digital age. From YouTube and Instagram to corporate ads and film — every industry needs editors. This course helps you build real income potential as a freelancer or in-house editor.",
+    },
+  },
+  {
+    index: 6,
+    title: "Full Stack Web Developer",
+    heroImage: "/images/screenshots/Background1.jpg",
+    image: "/images/courses_imgs/Full.jpeg",
+    description:
+      "Master Full-Stack Web Development with our 3-month hands-on MERN course designed to build real-world applications.",
+    details: {
+      date: "June 14, 2025",
+      duration: "3 Months + 1 Year Support",
+      timings: "Flexible (set with your batch)",
+      fee: "49,000 PKR",
+      highlights: [
+        "Project-based learning with weekly assignments",
+        "1-Year Trainer Support",
+        "Genesis Certificate upon assessment",
+        "Build and deploy full-stack applications",
+      ],
+      content: [
+        "HTML, CSS, and Responsive Design",
+        "JavaScript (ES6+) and Modern Git Workflows",
+        "Frontend Development with React.js",
+        "Backend APIs using Node.js and Express",
+        "MongoDB Integration and Deployment",
+      ],
+      whyJoin: [
+        "Learn from experienced full-stack developers",
+        "Hands-on, practical coding sessions",
+        "Build freelance-ready portfolio projects",
+      ],
+      coreSkills: [
+        "Frontend & Backend Development",
+        "JavaScript & React Fundamentals",
+        "RESTful API Design",
+        "MongoDB and Mongoose",
+        "Authentication & Deployment",
+      ],
+      tools: [
+        "VS Code",
+        "Git & GitHub",
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Axios & Postman",
+        "Render/Vercel",
+      ],
+      moduleSnapshot: [
+        {
+          heading: "01: Web Fundamentals & Development Tools ",
+          points: [
+            "Introduction to the Internet, HTTP & DNS",
+            "Getting started with VS Code, Git & GitHub",
+            "Terminal usage & NPM basics",
+          ],
+        },
+        {
+          heading: "02: HTML & CSS Essentials",
+          points: [
+            "HTML5: Forms, Semantic Tags, Input Types", 
+            "CSS Basics: Box Model, Flexbox, Styling Fundamentals",
+         ],
+        },
+        {
+          heading: "03: Responsive Design & JavaScript Basics",
+          points: [
+            "CSS Grid, Media Queries & Responsive Principles", 
+            "JavaScript Introduction: Variables, Functions, DOM Manipulation",
+            "Event Handling in JS"],
+        },
+        {
+          heading: "04: Modern JavaScript & Git Collaboration",
+          points: [
+            "Advanced JS: Arrays, Objects, Callbacks", 
+            "ES6+: let/const, Arrow Functions, Spread/Rest Operators", 
+            "Async JS: Promises, Fetch API", 
+            "Git Branching & Project Collaboration"],
+        },
+        {
+          heading: "05: React.js Fundamentals",
+          points: ["Intro to SPAs & React Setup", 
+            "Components, Props, and State", 
+            "React Router, Forms, and Lifting State Up"],
+        },
+        {
+          heading: "06: Advanced React & State Management",
+          points: [
+            "React Hooks: useState, useEffect", 
+            "Lists, Keys & Component Reuse", 
+            "Context API for State Management", 
+            "Handling Side Effects", 
+          ],
+        },
+        {
+          heading: "07: Backend Foundations with Node.js & MongoDB",
+          points: [" Introduction to NoSQL & MongoDB", 
+            "Using Mongo Shell, Compass, and Mongoose", 
+            "Node.js Basics & Express.js Fundamentals ", 
+            "Setting up RESTful APIs"],
+        },
+        {
+          heading: "08: API Development & Testing",
+          points: ["Routes, Middleware & Controllers", 
+            "CRUD API Operations ", 
+            "MongoDB Integration with Express", 
+            "Postman Testing, Error Handling, Validation"],
+        },
+        {
+          heading: "09: Authentication & Authorization",
+          points: ["JWT Authentication Flow", 
+            "Signup/Login APIs", 
+            "Route Protection & Role-Based Access", 
+            "Frontend Authentication Integration"],
+        },
+        {
+          heading: "10: Full Stack Integration",
+          points: ["Fetching & Displaying Backend Data in React", 
+            "Using Axios for API Calls", 
+            "Handling Form Submissions, Error States & Flash Messages" 
+          ],
+        },
+        {
+          heading: "11: Advanced Features & Deployment",
+          points: ["File Uploads", 
+            "Implementing Search, Filter & Pagination", 
+            "Performance Optimization & Reusable Components", 
+            "Preparing Frontend for Production", 
+            "Hosting on Render/Vercel, GitHub Actions Overview"],
+        },
+        {
+          heading: "12: Capstone Project & Career Prep",
+          points: ["End-to-End Full Stack Project Development", 
+            "Debugging, Feedback & Final Presentation", 
+            "Certificate Distribution & Career Guidance" 
+          ],
+        },
+      ],
+      careerOutlook:
+        "Launch your career as a Full Stack Developer, MERN Stack Engineer, or Freelance Web Developer with high-demand, real-world skills.",
     },
   },
 ];
