@@ -10,7 +10,11 @@ export const courses = [
       date: "June 14, 2025",
       duration: "3 Months + 1 Year Support",
       timings: "Flexible (set with your batch)",
-      fee: "24,900 PKR",
+      fee: (
+        <>
+          <del style={{ marginRight: "15px" }}>27,999 PKR</del>22,999 PKR
+        </>
+      ),
       highlights: [
         "Learn from experienced Graphic Designers",
         "Get 1-Year Trainer Support",
@@ -132,7 +136,11 @@ export const courses = [
       date: "June 14, 2025",
       duration: "2 Months + 1 Year Ongoing Support",
       timings: "Flexible \u2013 decided with trainees",
-      fee: "24,499 PKR",
+      fee: (
+        <>
+          <del style={{ marginRight: "15px" }}>28,999 PKR</del>23,999 PKR
+        </>
+      ),
       highlights: [
         "Proven strategies and expert-led training",
         "1-year dedicated trainer support after course ends",
@@ -237,7 +245,11 @@ export const courses = [
       date: "June 14, 2025",
       duration: "3 Months + 1 Year Support",
       timings: "Flexible (set with your batch)",
-      fee: "24,900 PKR",
+      fee: (
+        <>
+          <del style={{ marginRight: "15px" }}>29,499 PKR</del>24,499 PKR
+        </>
+      ),
       highlights: [
         "Learn from expert digital marketers",
         "Get 1-Year Trainer Support",
@@ -343,7 +355,11 @@ export const courses = [
       date: "June 14, 2025",
       duration: "3 Months + 1 Year Support",
       timings: "Flexible (set with your batch)",
-      fee: "29,900 PKR",
+      fee: (
+        <>
+          <del style={{ marginRight: "15px" }}>39,999 PKR</del>34,999 PKR
+        </>
+      ),
       highlights: [
         "Step-by-step learning from day 1",
         "Get 1-Year Trainer Support",
@@ -439,7 +455,11 @@ export const courses = [
       date: "June 14, 2025",
       duration: "3 Months + 1 Year Support",
       timings: "Flexible (set with your batch)",
-      fee: "26,900 PKR",
+      fee: (
+        <>
+          <del style={{ marginRight: "15px" }}>26,999 PKR</del>21,999 PKR
+        </>
+      ),
       highlights: [
         "Start editing from Day 1",
         "1-Year Trainer & Portfolio Support",
@@ -543,7 +563,11 @@ export const courses = [
       date: "June 14, 2025",
       duration: "3 Months + 1 Year Support",
       timings: "Flexible (set with your batch)",
-      fee: "49,000 PKR",
+      fee: (
+        <>
+          <del style={{ marginRight: "15px" }}>49,999 PKR</del>44,999 PKR
+        </>
+      ),
       highlights: [
         "Project-based learning with weekly assignments",
         "1-Year Trainer Support",

@@ -21,13 +21,13 @@ export default function CoursePage({ params }) {
           color: 'white',
           textAlign: 'center',
           position: 'relative',
-          minHeight: 'calc(50vh + 160px)', // Increased height for additional content
+          minHeight: 'calc(60vh + 160px)', // Increased height for additional content
         }}
       >
         <div
           style={{
             position: 'absolute',
-            top: '18%',
+            top: '16%',
             left: '50%',
             transform: 'translateX(-50%)',
             zIndex: 2,
@@ -73,7 +73,7 @@ export default function CoursePage({ params }) {
               cursor: 'pointer',
               border: 'none',
               textDecoration: 'none',
-              marginTop: '25px',
+              marginTop: '20px',
               display: 'inline-block',
             }}
           >

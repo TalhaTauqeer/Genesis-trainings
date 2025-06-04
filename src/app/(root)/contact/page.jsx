@@ -1,4 +1,6 @@
 import React from "react";
+import Image from 'next/image';
+
 
 export default function ContactPage() {
   return (
@@ -6,10 +8,10 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section
         style={{
-          backgroundImage: 'url("/images/screenshots/enrollment.png")',
+          backgroundImage: 'url("/images/screenshots/call.png")',
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: "60vh",
+          minHeight: "80vh",
           height: "auto",
           position: "relative",
           color: "white",
@@ -67,28 +69,40 @@ export default function ContactPage() {
           }}
         >
           {/* Contact Phone */}
-          <div
-            style={{
-              flex: "1 1 300px",
-              borderRight: "1px solid #ccc",
-              paddingRight: "40px",
-              minWidth: "280px",
-            }}
-          >
-            <div style={{ fontSize: "4.5rem", marginBottom: "15px" }}>📞</div>
-            <div
-              style={{
-                color: "#f15a24",
-                fontWeight: "600",
-                marginBottom: "15px",
-                fontSize: "1.3rem",
-                letterSpacing: "1px",
-              }}
-            >
-              CONTACT
-            </div>
-            <div style={{ fontSize: "1.3rem", lineHeight: "1.5" }}>+9242 111 123 111</div>
-          </div>
+<div
+  style={{
+    flex: "1 1 300px",
+    borderRight: "1px solid #ccc",
+    paddingRight: "40px",
+    minWidth: "280px",
+  }}
+>
+  {/* Phone Icon */}
+  <div style={{ fontSize: "4.5rem", marginBottom: "27px", marginLeft:'110px', marginTop: '20px', color: "#007aff" }}>
+    <Image
+      src="/images/icons/phone.png" // Replace with your actual phone icon file path
+      alt="Phone Icon"
+      width={80}  // Set width
+      height={80} // Set height to maintain aspect ratio
+    />
+  </div>
+
+  {/* Contact Label */}
+  <div
+    style={{
+      color: "#f15a24",
+      fontWeight: "600",
+      marginBottom: "13px",
+      fontSize: "1.3rem",
+      letterSpacing: "1px",
+    }}
+  >
+    CONTACT
+  </div>
+
+  {/* Phone Number */}
+  <div style={{ fontSize: "1.3rem", lineHeight: "1.5" }}>+9242 111 123 111</div>
+</div>
 
           {/* Email Section */}
 <div
@@ -111,7 +125,7 @@ export default function ContactPage() {
   >
     EMAIL
   </div>
-  <div style={{ fontSize: "1.3rem", lineHeight: "1.5" }}>genesis@gmail.com</div>
+  <div style={{ fontSize: "1.3rem", lineHeight: "1.5" }}>trainings@genesisengr.com</div>
 </div>
 
 {/* Timing Section */}
