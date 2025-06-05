@@ -5,6 +5,7 @@ import { Plan } from './Plan'
 import { Container } from '@/components/Container'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import Link from 'next/link'
 
 // Pricing component
 export function Pricing() {
@@ -15,7 +16,7 @@ export function Pricing() {
       className="bg-slate-900 py-20 sm:py-32"
     >
       <Container>
-        <div className="mb-16 md:text-center">
+        <div className="mb-16 text-center sm:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             OUR TRAINING PROGRAMS
           </h2>
@@ -38,9 +39,10 @@ export function Pricing() {
             },
             mobile: {
               breakpoint: { max: 464, min: 0 },
-              items: 1,
+              items: 1, // Show only 1 card on mobile
             },
           }}
+          className='mx-[3rem] md:mx-0 gap-2'
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={3000}
@@ -51,19 +53,23 @@ export function Pricing() {
           containerClass="carousel-container"
           itemClass="carousel-item"
           style={{
-            padding: '0 5px', // Increased padding for more space
+            padding: '0 3px', // Increased padding for more space
             width: 'calc(100% + 100px)', // Increase the carousel width to take up more space
             marginLeft: '-50px', // Moves the carousel content left
             marginRight: '-50px', // Moves the carousel content right
+            display: 'flex', // Ensure proper centering of the carousel
+            justifyContent: 'center', // Center the carousel items
           }}
         >
           {/* Rendering the cards */}
           {courses.map(({ index, image, description, details }) => (
             <Plan
+              
               key={index}
               image={image}
               description={description}
               date={details.date}
+              index={index} // Pass index to the Plan component
             />
           ))}
         </Carousel>
@@ -80,12 +86,7 @@ export function Pricing() {
           position: absolute;
           top: 50%;
           transform: translateY(-50%);
-          background-color: rgba(
-            0,
-            0,
-            0,
-            0.5
-          ); /* Semi-transparent background */
+          background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
           color: white;
           border: none;
           padding: 10px;
