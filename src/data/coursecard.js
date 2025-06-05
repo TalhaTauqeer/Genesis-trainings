@@ -5,7 +5,7 @@ export const courses = [
     heroImage: "/images/screenshots/Background1.jpg",
     image: "/images/courses_imgs/GraphicDesigner.jpeg",
     description:
-      "Start your career as a graphic designer and master tools like Photoshop, Illustrator, and Canva. Build your own portfolio.",
+      "Start your career as a graphic designer and master tools like Photoshop, Illustrator, and Canva.",
     details: {
       date: "June 14, 2025",
       duration: "3 Months + 1 Year Support",

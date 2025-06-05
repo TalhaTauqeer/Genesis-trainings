@@ -7,10 +7,9 @@ export default function AboutPage() {
       <section
         style={{
           backgroundImage: 'url("/images/screenshots/enrollment.png")',
-          backgroundSize: 'cover', // ensures the image fills the container, potentially cropping
+          backgroundSize: 'cover', // ensures the image fills the container
           backgroundPosition: 'center',
-          minHeight: '60vh', // ensure it takes at least the full viewport height
-          height: 'auto', // automatic height adjustment
+          minHeight: '60vh', // ensures it takes at least the full viewport height
           position: 'relative',
           color: 'white',
           display: 'flex',
@@ -18,7 +17,7 @@ export default function AboutPage() {
           justifyContent: 'center',
           textAlign: 'center',
           padding: '0 20px',
-          backgroundColor: '#004875', // fallback background color in case of any gaps
+          backgroundColor: '#004875', // fallback background color
         }}
       >
         <div
@@ -34,6 +33,7 @@ export default function AboutPage() {
               textShadow: '0 0 10px rgba(0,0,0,0.7)',
               margin: 0,
             }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
             About Us
           </h1>
@@ -41,10 +41,10 @@ export default function AboutPage() {
       </section>
 
       {/* Content Section */}
-      <section className="flex flex-col items-start gap-12 p-8 md:flex-row md:items-center">
+      <section className="flex flex-col gap-12 px-8 py-16 md:flex-row md:gap-16">
         {/* Left Text Section */}
-        <div className="max-w-3xl flex-1">
-          <p className="text-justify text-lg leading-relaxed">
+        <div className="max-w-full sm:max-w-3xl flex-1 text-left md:text-left">
+          <p className="text-justify text-base sm:text-lg leading-relaxed">
             Welcome to <strong>Genesis Trainings</strong>, the training and
             professional development arm of Genesis Engineering, a leading
             software solutions company established in 2017. With years of
@@ -52,7 +52,7 @@ export default function AboutPage() {
             the growing demand for skilled professionals who are ready to meet
             the challenges of an ever-evolving digital world.
           </p>
-          <p className="mt-6 text-justify text-lg leading-relaxed">
+          <p className="mt-6 text-justify text-base sm:text-lg leading-relaxed">
             Genesis Trainings was founded with a clear mission: to bridge the
             gap between academic learning and industry expectations. Our
             programs are designed to provide practical, hands-on training that
@@ -65,13 +65,13 @@ export default function AboutPage() {
             experience into every classroom. At Genesis Trainings, we don{"'"}t
             just teach — we shape careers and build futures.
           </p>
-          <p className="mt-6 text-xl font-bold">Learn. Apply. Lead.</p>
-          <h3 className="mt-8 text-2xl font-bold">
-            Join us and turn potential into performance.
+          <p className="mt-6 text-xl font-bold text-center sm:text-2xl md:text-2xl">Learn. Apply. Lead.</p>
+          <h3 className="mt-7 text-[1.8rem] font-bold text-center sm:text-[1rem] md:text-[2rem]">
+            Join us and turn potential into performance
           </h3>
 
           {/* Logos */}
-          <div className="mt-8 flex items-center gap-16">
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
             <div className="flex flex-col items-center">
               <Image
                 src="/images/icons/navttc.jpg"
@@ -100,12 +100,12 @@ export default function AboutPage() {
         </div>
 
         {/* Right Banner Image */}
-        <div className="ml-auto max-w-2xl flex-1">
+        <div className="max-w-full sm:max-w-2xl flex-1 ml-auto">
           <Image
             src="/images/screenshots/AboutBan.jpeg"
             alt="About Banner"
             width={1000}
-            height={300}
+            height={400}
             style={{
               borderRadius: '8px',
               objectFit: 'cover',

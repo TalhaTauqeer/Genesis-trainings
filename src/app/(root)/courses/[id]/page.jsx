@@ -31,13 +31,28 @@ export default function CoursePage({ params }) {
             left: '50%',
             transform: 'translateX(-50%)',
             zIndex: 2,
-            maxWidth: '600px',
+            maxWidth: '90%',
+            width: '600px',
+            textAlign: 'center',
           }}
         >
-          <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>
+          <h1
+            style={{
+              fontSize: '3rem',
+              fontWeight: 'bold',
+              margin: 0,
+              lineHeight: '1.2',
+            }}
+          >
             {course.title}
           </h1>
-          <p style={{ fontSize: '1.2rem', marginTop: '20px' }}>
+          <p
+            style={{
+              fontSize: '1.2rem',
+              marginTop: '20px',
+              lineHeight: '1.5',
+            }}
+          >
             {course.description}
           </p>
 
@@ -82,55 +97,104 @@ export default function CoursePage({ params }) {
         </div>
       </section>
 
-      {/* Why Join This Training? */}
-      <section
+{/* Why Join This Training? */}
+<section
+  style={{
+    backgroundColor: '#f5fafd',
+    padding: '60px 0',
+    color: '#004875',
+  }}
+>
+  <h3
+    style={{
+      fontSize: '2.5rem',
+      fontWeight: 'bold',
+      textAlign: 'center',
+      marginBottom: '20px',
+    }}
+  >
+    Why Join This Training?
+  </h3>
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center', // Center the content for both mobile and desktop
+      marginTop: '20px',
+    }}
+  >
+    {course.details.whyJoin.map((item, index) => (
+      <div
+        key={index}
         style={{
-          backgroundColor: '#f5fafd',
-          padding: '60px 0',
-          textAlign: 'left',
-          color: '#004875',
+          fontSize: '1.2rem',
+          marginBottom: '15px',
+          display: 'flex',
+          alignItems: 'flex-start', // Keep the checkmark and text aligned
+          textAlign: 'center', // Center-align text for both views
+          width: '90%',
+          lineHeight: '1.5',
+          justifyContent: 'center', // Center the content
         }}
       >
-        <h3
+        <span
+          role="img"
+          aria-label="check"
           style={{
-            fontSize: '2.5rem',
-            fontWeight: 'bold',
-            textAlign: 'center',
+            marginRight: '10px',
+            fontSize: '1.5rem',
+            display: 'inline-block',
+            verticalAlign: 'top', // Ensure the checkmark stays aligned with the top of the text
           }}
         >
-          Why Join This Training?
-        </h3>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginTop: '20px',
-          }}
-        >
-          {course.details.whyJoin.map((item, index) => (
-            <div
-              key={index}
-              style={{
-                fontSize: '1.2rem',
-                marginBottom: '15px',
-                display: 'flex',
-                alignItems: 'center',
-                textAlign: 'center',
-              }}
-            >
-              <span
-                role="img"
-                aria-label="check"
-                style={{ marginRight: '10px' }}
-              >
-                ✔
-              </span>
-              {item}
-            </div>
-          ))}
-        </div>
-      </section>
+          ✔
+        </span>
+        <span style={{ display: 'inline-block', verticalAlign: 'top' }}>
+          {item}
+        </span>
+      </div>
+    ))}
+  </div>
+
+  <style>{`
+    @media screen and (max-width: 768px) {
+      /* Mobile view: Center the items */
+      .why-join-items {
+        text-align: center; /* Center the text and checkmark */
+      }
+
+      .why-join-items div {
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; /* Center the text */
+      }
+
+      .why-join-items div span {
+        margin-left: 0; /* Ensure the checkmark aligns properly */
+        vertical-align: top; /* Align the checkmark to the top */
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      /* Desktop view: Keep the items center aligned */
+      .why-join-items {
+        text-align: center; /* Center the text and checkmark */
+      }
+
+      .why-join-items div {
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Center the text */
+      }
+
+      .why-join-items div span {
+        margin-left: 0; /* Ensure the checkmark aligns properly */
+        vertical-align: top; /* Align the checkmark to the top of text */
+      }
+    }
+  `}</style>
+</section>
+
 
       {/* What You'll Learn */}
       <section
@@ -145,6 +209,7 @@ export default function CoursePage({ params }) {
             fontSize: '2.5rem',
             fontWeight: 'bold',
             textAlign: 'center',
+            marginBottom: '20px',
           }}
         >
           What You{"'"}ll Learn
@@ -188,6 +253,7 @@ export default function CoursePage({ params }) {
             fontSize: '2.5rem',
             fontWeight: 'bold',
             textAlign: 'center',
+            marginBottom: '20px',
           }}
         >
           Core Skills Covered
@@ -232,6 +298,7 @@ export default function CoursePage({ params }) {
             fontSize: '2.5rem',
             fontWeight: 'bold',
             textAlign: 'center',
+            marginBottom: '20px',
           }}
         >
           Tools You{"'"}ll Use
@@ -239,11 +306,11 @@ export default function CoursePage({ params }) {
         <div
           style={{
             display: 'flex',
-            flexDirection: 'row',      // changed from 'column' to 'row'
-            justifyContent: 'center',  // center items horizontally
-            flexWrap: 'wrap',          // allow wrapping if too wide
+            flexDirection: 'row',
+            justifyContent: 'center',
+            flexWrap: 'wrap',
+            gap: '30px',
             marginTop: '5px',
-            gap: '30px',               // space between items horizontally and vertically
           }}
         >
           {course.details.tools.map((item, index) => (
@@ -254,7 +321,7 @@ export default function CoursePage({ params }) {
                 display: 'flex',
                 alignItems: 'center',
                 textAlign: 'center',
-                marginBottom: '20px',        // remove vertical margin, spacing done by gap
+                marginBottom: '20px',
               }}
             >
               <span
@@ -270,8 +337,7 @@ export default function CoursePage({ params }) {
         </div>
       </section>
 
-
-  {/* Module Snapshot */}
+      {/* Module Snapshot */}
       <section
         style={{
           backgroundColor: '#ffffff',
@@ -284,6 +350,7 @@ export default function CoursePage({ params }) {
             fontSize: '2.5rem',
             fontWeight: 'bold',
             textAlign: 'center',
+            marginBottom: '20px',
           }}
         >
           Module Snapshot
@@ -291,11 +358,9 @@ export default function CoursePage({ params }) {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
             gap: '30px',
             marginTop: '40px',
-            marginLeft: '2%',
-            marginRight: '10px',
           }}
         >
           {course.details.moduleSnapshot.map((item, index) => (
@@ -366,6 +431,7 @@ export default function CoursePage({ params }) {
             fontSize: '2.5rem',
             fontWeight: 'bold',
             textAlign: 'center',
+            marginBottom: '20px',
           }}
         >
           Career Outlook
